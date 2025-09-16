@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/home/kavia/workspace/code-generation/design-extractor-19-28/react_frontend"
+}
