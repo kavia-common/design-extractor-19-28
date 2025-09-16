@@ -81,7 +81,7 @@ export default function SignIn({ onNavigate }) {
           <a href="#" id="forgot-link">Forgot Password?</a>
         </p>
 
-        <button type="submit" className="btn cta" id="cta-signin">
+        <button type="submit" className="btn cta" id="cta-signin" aria-label="Sign In">
           <span className="cta-label">Sign In</span>
           <span className="cta-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -119,7 +119,7 @@ export default function SignIn({ onNavigate }) {
         </div>
 
         <p className="signup-link">
-          <a href="#" id="signup-link">Don’t have an account? Sign up</a>
+          <a href="#" id="signup-link" aria-label="Go to Sign Up">Don’t have an account? Sign up</a>
         </p>
       </form>
 

@@ -64,7 +64,7 @@ export default function SignUp({ onNavigate }) {
   }, [onNavigate]);
 
   return (
-    <main className="screen" role="main" aria-labelledby="title-text">
+    <main className="screen sign-up" role="main" aria-labelledby="title-text">
       {/* Status Bar */}
       <div className="status-bar" aria-hidden="true">
         <div className="time">19:27</div>
@@ -98,7 +98,7 @@ export default function SignUp({ onNavigate }) {
         <div className="field">
           <label className="label" htmlFor="password">Password</label>
           <div className="input-wrap">
-            <input id="password" name="password" type="password" placeholder="Enter Passwrod" />
+            <input id="password" name="password" type="password" placeholder="Enter Password" />
           </div>
         </div>
 

@@ -57,8 +57,8 @@ export default function Home() {
           <h1 id="greeting-title" className="greeting-title">Hello Jega</h1>
           <p className="greeting-subtitle">What are you cooking today?</p>
         </div>
-        <button className="avatar-btn" type="button" aria-label="Profile">
-          <span className="avatar"></span>
+        <button className="avatar-btn" type="button" aria-label="Open profile">
+          <span className="avatar" aria-hidden="true"></span>
         </button>
 
         <div className="search-filter-row">
@@ -71,7 +71,7 @@ export default function Home() {
             </span>
             <input type="text" id="search" placeholder="Search recipe" aria-label="Search recipe" />
           </div>
-          <button className="btn filter-btn" id="filter-btn" type="button" aria-label="Open filter">
+          <button className="btn filter-btn" id="filter-btn" type="button" aria-label="Open filter options">
             <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M12.5 6.5h4.5M3 6.5h7" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"/>
               <circle cx="11" cy="6.5" r="1.5" fill="#ffffff"/>
@@ -82,16 +82,16 @@ export default function Home() {
         </div>
 
         <nav className="chips" aria-label="Categories">
-          <button className="chip chip--active" data-chip="All" type="button">All</button>
-          <button className="chip" data-chip="Indian" type="button">Indian</button>
-          <button className="chip" data-chip="Italian" type="button">Italian</button>
-          <button className="chip" data-chip="Asian" type="button">Asian</button>
-          <button className="chip" data-chip="Chinese" type="button">Chinese</button>
-          <button className="chip" data-chip="Fruit" type="button">Fruit</button>
-          <button className="chip" data-chip="Vegetables" type="button">Vegetables</button>
-          <button className="chip" data-chip="Protein" type="button">Protein</button>
-          <button className="chip" data-chip="Cereal" type="button">Cereal</button>
-          <button className="chip" data-chip="Local Dishes" type="button">Local Dishes</button>
+          <button className="chip chip--active" data-chip="All" type="button" aria-pressed="true">All</button>
+          <button className="chip" data-chip="Indian" type="button" aria-pressed="false">Indian</button>
+          <button className="chip" data-chip="Italian" type="button" aria-pressed="false">Italian</button>
+          <button className="chip" data-chip="Asian" type="button" aria-pressed="false">Asian</button>
+          <button className="chip" data-chip="Chinese" type="button" aria-pressed="false">Chinese</button>
+          <button className="chip" data-chip="Fruit" type="button" aria-pressed="false">Fruit</button>
+          <button className="chip" data-chip="Vegetables" type="button" aria-pressed="false">Vegetables</button>
+          <button className="chip" data-chip="Protein" type="button" aria-pressed="false">Protein</button>
+          <button className="chip" data-chip="Cereal" type="button" aria-pressed="false">Cereal</button>
+          <button className="chip" data-chip="Local Dishes" type="button" aria-pressed="false">Local Dishes</button>
         </nav>
       </header>
 
@@ -100,7 +100,7 @@ export default function Home() {
       <section className="new-recipes" aria-label="New Recipes">
         <div className="recipe-row">
           <article className="recipe-card">
-            <div className="card-media"><div className="thumb"></div></div>
+            <div className="card-media"><div className="thumb" role="img" aria-label="Recipe image placeholder"></div></div>
             <div className="card-body">
               <h3 className="card-title">Steak with tomato sauce and bulgur rice.</h3>
               <div className="meta-row">
@@ -118,7 +118,7 @@ export default function Home() {
           </article>
 
           <article className="recipe-card">
-            <div className="card-media"><div className="thumb"></div></div>
+            <div className="card-media"><div className="thumb" role="img" aria-label="Recipe image placeholder"></div></div>
             <div className="card-body">
               <h3 className="card-title">Pilaf sweet with lamb-and-raisins</h3>
               <div className="meta-row">
@@ -136,7 +136,7 @@ export default function Home() {
           </article>
 
           <article className="recipe-card">
-            <div className="card-media"><div className="thumb"></div></div>
+            <div className="card-media"><div className="thumb" role="img" aria-label="Recipe image placeholder"></div></div>
             <div className="card-body">
               <h3 className="card-title">Rice Pilaf, Broccoli and Chicken</h3>
               <div className="meta-row">
@@ -154,7 +154,7 @@ export default function Home() {
           </article>
 
           <article className="recipe-card">
-            <div className="card-media"><div className="thumb"></div></div>
+            <div className="card-media"><div className="thumb" role="img" aria-label="Recipe image placeholder"></div></div>
             <div className="card-body">
               <h3 className="card-title">Chicken meal with sauce</h3>
               <div className="meta-row">
@@ -172,7 +172,7 @@ export default function Home() {
           </article>
 
           <article className="recipe-card">
-            <div className="card-media"><div className="thumb"></div></div>
+            <div className="card-media"><div className="thumb" role="img" aria-label="Recipe image placeholder"></div></div>
             <div className="card-body">
               <h3 className="card-title">Stir-fry chicken with broccoli in sweet and sour sauce and rice.</h3>
               <div className="meta-row">
@@ -194,7 +194,7 @@ export default function Home() {
       <section className="popular" aria-label="Popular Dishes">
         <div className="carousel">
           <article className="popular-card">
-            <div className="image"></div>
+            <div className="image" role="img" aria-label="Dish image placeholder"></div>
             <button className="bookmark" type="button" aria-label="Save recipe"></button>
             <div className="info">
               <div className="pill rating-pill">
@@ -210,7 +210,7 @@ export default function Home() {
           </article>
 
           <article className="popular-card">
-            <div className="image"></div>
+            <div className="image" role="img" aria-label="Dish image placeholder"></div>
             <button className="bookmark" type="button" aria-label="Save recipe"></button>
             <div className="info">
               <div className="pill rating-pill">
@@ -226,7 +226,7 @@ export default function Home() {
           </article>
 
           <article className="popular-card">
-            <div className="image"></div>
+            <div className="image" role="img" aria-label="Dish image placeholder"></div>
             <button className="bookmark" type="button" aria-label="Save recipe"></button>
             <div className="info">
               <div className="pill rating-pill">
@@ -242,7 +242,7 @@ export default function Home() {
           </article>
 
           <article className="popular-card">
-            <div className="image"></div>
+            <div className="image" role="img" aria-label="Dish image placeholder"></div>
             <button className="bookmark" type="button" aria-label="Save recipe"></button>
             <div className="info">
               <div className="pill rating-pill">
@@ -258,7 +258,7 @@ export default function Home() {
           </article>
 
           <article className="popular-card">
-            <div className="image"></div>
+            <div className="image" role="img" aria-label="Dish image placeholder"></div>
             <button className="bookmark" type="button" aria-label="Save recipe"></button>
             <div className="info">
               <div className="pill rating-pill">
