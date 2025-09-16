@@ -1,0 +1,95 @@
+/* Moved for CRA compatibility */
+.sign-in.screen {
+  background: var(--color-ffffff);
+  border-radius: var(--radius-30);
+  width: 375px;
+  min-height: 812px;
+  padding: 44px 30px 34px;
+  position: relative;
+}
+.status-bar {
+  position: absolute; top: 0; left: 0; height: 44px; width: 100%;
+  display: flex; align-items: center; padding: 0 14px;
+  color: var(--color-303030); font-family: var(--font-family-sfpro);
+  font-size: 15px; font-weight: 500; line-height: 17.9px;
+}
+.status-bar .time { margin-left: 29px; }
+.status-bar .indicators { margin-left: auto; display: flex; gap: 10px; }
+.status-bar .wifi, .status-bar .cell, .status-bar .battery {
+  width: 16px; height: 10px; background: var(--color-303030); opacity: 0.4; border-radius: 2px;
+}
+.title-group { margin-top: 44px; }
+.title {
+  margin: 0; color: var(--color-000000);
+  font-family: var(--font-family-poppins); font-size: 30px; font-weight: 600; line-height: 45px;
+}
+.subtitle {
+  margin: 6px 0 0; color: var(--color-121212);
+  font-family: var(--font-family-poppins); font-size: 20px; font-weight: 400; line-height: 30px;
+}
+.form { margin-top: 30px; }
+.field { width: 315px; height: 81px; position: relative; }
+.field + .field { margin-top: 30px; }
+.label {
+  display: block; color: var(--color-121212);
+  font-size: var(--typo-66-size); font-weight: var(--typo-66-weight); line-height: var(--typo-66-line);
+  margin-bottom: 5px;
+}
+.input-wrap {
+  height: 55px; border: 1.5px solid var(--color-d9d9d9); border-radius: var(--radius-10);
+  display: flex; align-items: center; padding: 0 20px;
+}
+.input-wrap input {
+  width: 100%; height: 100%; border: none; outline: none;
+  font-family: var(--font-family-poppins); font-size: var(--typo-65-size); font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line); color: var(--color-121212);
+}
+.input-wrap input::placeholder { color: var(--color-d9d9d9); }
+
+.forgot { margin-top: 8px; margin-bottom: 0; width: 315px; text-align: left; }
+.forgot a {
+  text-decoration: none; color: var(--color-ff9c00);
+  font-family: var(--font-family-poppins); font-size: var(--typo-62-size); font-weight: var(--typo-62-weight); line-height: var(--typo-62-line);
+}
+
+.cta {
+  width: 315px; height: 60px; margin-top: 22px; background: var(--color-129575);
+  border-radius: var(--radius-10); color: var(--color-ffffff);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+.cta:disabled { opacity: 0.6; cursor: not-allowed; }
+.cta:active { transform: translateY(1px); }
+.cta-label {
+  color: var(--color-ffffff); font-family: var(--font-family-poppins);
+  font-size: var(--typo-58-size); font-weight: var(--typo-58-weight); line-height: var(--typo-58-line);
+}
+
+.or-line { margin-top: 14px; width: 315px; display: flex; align-items: center; gap: 14px; }
+.or-line .line { flex: 1; height: 1px; background: var(--color-d9d9d9); }
+.or-line .or-text {
+  color: var(--color-d9d9d9); font-family: var(--font-family-poppins);
+  font-size: var(--typo-64-size); font-weight: var(--typo-64-weight); line-height: var(--typo-64-line); white-space: nowrap;
+}
+
+.social { margin-top: 20px; display: flex; gap: 25px; width: 315px; }
+.social-btn {
+  width: 44px; height: 44px; border-radius: var(--radius-10); background: var(--color-ffffff);
+  box-shadow: var(--shadow-0); display: inline-flex; align-items: center; justify-content: center;
+}
+.social-btn .icon { display: inline-flex; }
+
+.signup-link { margin-top: 20px; text-align: center; width: 315px; }
+.signup-link a {
+  text-decoration: none; color: var(--color-000000);
+  font-family: var(--font-family-poppins); font-size: var(--typo-63-size); font-weight: var(--typo-63-weight); line-height: var(--typo-63-line);
+}
+
+.home-indicator {
+  position: absolute; left: 50%; bottom: 14px; width: 135px; height: 5px;
+  transform: translateX(-50%); background: var(--color-121212); border-radius: var(--radius-100);
+}
+
+@media (max-width: 400px) {
+  .sign-in.screen { width: 100%; border-radius: 0; padding-left: 20px; padding-right: 20px; }
+  .field, .cta, .or-line, .social, .signup-link, .forgot { width: 100%; }
+}

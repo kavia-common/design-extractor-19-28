@@ -1,0 +1,166 @@
+/* Moved from project assets/ to src/assets/ for CRA compatibility */
+:root {
+  /* Colors mapped from design_system colors */
+  --color-ffffff: #ffffff;
+  --color-292929: #292929;
+  --color-000000: #000000;
+  --color-e9fffa: #e9fffa;
+  --color-979797: #979797;
+  --color-fff2af: #fff2af;
+  --color-129575: #129575;
+  --color-dadada: #dadada;
+  --color-4cd964: #4cd964;
+  --color-121212: #121212;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-d9d9d9: #d9d9d9;
+  --color-484848: #484848;
+  --color-303030: #303030;
+  --color-a9a9a9: #a9a9a9;
+  --color-ffa61a: #ffa61a;
+  --color-ffce80: #ffce80;
+  --color-71b1a1: #71b1a1;
+  --color-130f26: #130f26;
+  --color-c1c1c1: #c1c1c1;
+  --color-ffe1b3: #ffe1b3;
+  --color-ffad30: #ffad30;
+  --color-dbebE7: #dbebe7;
+  --color-898989: #898989;
+  --color-292d32: #292d32;
+  --color-181818: #181818;
+  --color-c4c4c4: #c4c4c4;
+  --color-797979: #797979;
+  --color-808a96: #808a96;
+  --color-ceecd7: #ceecd7;
+  --color-31b057: #31b057;
+  --color-ffe1e7: #ffe1e7;
+  --color-fd3654: #fd3654;
+  --color-ffba4d: #ffba4d;
+  --color-d8d8d8: #d8d8d8;
+  --color-f6faf9: #f6faf9;
+  --color-afd3ca: #afd3ca;
+  --color-f4f4f4: #f4f4f4;
+  --color-9747ff: #9747ff;
+  --color-828282: #828282;
+
+  /* Typography tokens */
+  --font-family-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-family-sfpro: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Common sizes */
+  --typo-68-size: 20px;
+  --typo-68-weight: 600;
+  --typo-68-line: 30px;
+
+  --typo-69-size: 11px;
+  --typo-69-weight: 400;
+  --typo-69-line: 16.5px;
+
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line: 16.5px;
+
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line: 16.5px;
+
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line: 16.5px;
+
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line: 21px;
+
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line: 24px;
+
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line: 16.5px;
+
+  /* Spacing scale */
+  --space-0: 0px;
+  --space-4: 4px;
+  --space-5: 5px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-17: 17px;
+  --space-20: 20px;
+  --space-21: 21px;
+  --space-24: 24px;
+  --space-30: 30px;
+  --space-34: 34px;
+  --space-40: 40px;
+  --space-44: 44px;
+  --space-55: 55px;
+  --space-60: 60px;
+  --space-69: 69px;
+  --space-81: 81px;
+  --space-315: 315px;
+
+  /* Radii */
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-9: 9px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-30: 30px;
+  --radius-100: 100px;
+
+  /* Shadows */
+  --shadow-0: 0 0 5px 3px #696969;
+  --shadow-1: 0 8px 25px 0 #202020;
+  --shadow-2: 0 0 8px 0 #6c6c6c;
+  --shadow-3: 0 0 20px 0 #000000;
+  --shadow-5: 0 4px 4px 0 #000000;
+}
+
+/* Base reset and container aligned with 375x812 pt screen */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+  color: var(--color-121212);
+  font-family: var(--font-family-poppins);
+}
+.screen {
+  width: 375px;
+  min-height: 812px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-30);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;
+}
+
+/* Common atoms from styles */
+.line {
+  height: 1px;
+  background-color: var(--color-d9d9d9);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
